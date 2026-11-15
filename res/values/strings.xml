@@ -465,6 +465,12 @@
     <string name="more_colors">More Colors</string>
 
     <!--
+    Title of a button that opens the system colors picker, shown next to the "Change wallpaper"
+    button of the wallpaper section. [CHAR LIMIT=32].
+    -->
+    <string name="change_colors">Change colors</string>
+
+    <!--
     Accessibility string for a button that allows the user to select a color scheme generated from
     their current wallpaper as the system color. This is shown in a list with other color options.
 

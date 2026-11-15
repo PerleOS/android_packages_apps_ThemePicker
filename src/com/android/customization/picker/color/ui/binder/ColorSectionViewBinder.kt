@@ -52,9 +52,13 @@ object ColorSectionViewBinder {
             view.requireViewById(R.id.color_section_option_container)
         val moreColorsButton: View = view.requireViewById(R.id.more_colors)
         if (isConnectedHorizontallyToOtherSections) {
+            // Next to the wallpaper section, which only shows a "Change wallpaper" button when
+            // there are no recent wallpapers, show a matching button instead of the options.
+            optionContainer.isVisible = false
             moreColorsButton.isVisible = true
             moreColorsButton.setOnClickListener(navigationOnClick)
         } else {
+            optionContainer.isVisible = true
             moreColorsButton.isVisible = false
         }
         lifecycleOwner.lifecycleScope.launch {
