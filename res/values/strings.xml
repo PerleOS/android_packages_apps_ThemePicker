@@ -465,8 +465,8 @@
     <string name="more_colors">More Colors</string>
 
     <!--
-    Title of a button that opens the system colors picker, shown next to the "Change wallpaper"
-    button of the wallpaper section. [CHAR LIMIT=32].
+    Title of a button that opens the system colors picker. Currently unused, kept for a later
+    button. [CHAR LIMIT=32].
     -->
     <string name="change_colors">Change colors</string>
 

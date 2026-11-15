@@ -20,9 +20,12 @@ package com.android.customization.picker.color.ui.binder
 import android.content.res.Configuration
 import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.core.view.doOnAttach
 import androidx.core.view.isVisible
+import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
@@ -57,6 +60,15 @@ object ColorSectionViewBinder {
             optionContainer.isVisible = false
             moreColorsButton.isVisible = true
             moreColorsButton.setOnClickListener(navigationOnClick)
+
+            // Inflated without a parent and given new layout params by ConnectedSectionController,
+            // so the layout_marginBottom from the XML never applies.
+            view.doOnAttach {
+                it.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                    bottomMargin =
+                        it.resources.getDimensionPixelSize(R.dimen.section_bottom_padding)
+                }
+            }
         } else {
             optionContainer.isVisible = true
             moreColorsButton.isVisible = false

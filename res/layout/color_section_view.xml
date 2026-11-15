@@ -59,7 +59,7 @@
         android:drawablePadding="12dp"
         android:drawableStart="@drawable/ic_nav_color"
         android:drawableTint="@color/system_primary"
-        android:text="@string/change_colors"
+        android:text="@string/color_picker_title"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
         android:textColor="@color/system_primary"
         android:textSize="@dimen/wallpaper_header_text_size"
