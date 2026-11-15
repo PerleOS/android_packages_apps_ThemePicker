@@ -179,4 +179,8 @@
     <!-- preview page -->
     <dimen name="preview_page_top_margin">16dp</dimen>
     <dimen name="preview_page_bottom_margin">16dp</dimen>
+
+    <!-- Vertical padding around the icon pack, icon shape and font previews -->
+    <dimen name="theme_component_preview_padding_top">@dimen/preview_page_top_margin</dimen>
+    <dimen name="theme_component_preview_padding_bottom">@dimen/preview_page_bottom_margin</dimen>
 </resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The PerleOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- WallpaperPicker2's values-w800dp page margins (96dp/72dp) leave the
+         previews little height on a landscape tablet. -->
+    <dimen name="theme_component_preview_padding_top">16dp</dimen>
+    <dimen name="theme_component_preview_padding_bottom">16dp</dimen>
+    <!-- bottom_actions_height (84dp) + 16dp, so that the option labels do
+         not touch the bottom action bar -->
+    <dimen name="grid_options_container_bottom_margin">100dp</dimen>
+</resources>

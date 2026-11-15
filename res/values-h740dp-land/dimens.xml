@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The PerleOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- values-land caps the preview content at 140dp, but values-h740dp
+         sizes the icons and shapes for portrait: two rows of 48dp icons or
+         shapes and the spacer between them need up to 172dp, and the 76dp
+         margins leave the card less room than its content on a landscape
+         tablet. -->
+    <dimen name="preview_theme_content_margin">48dp</dimen>
+    <dimen name="preview_theme_content_max_height">180dp</dimen>
+</resources>
